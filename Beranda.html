@@ -3,936 +3,911 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yukkayu Furniture - Furnitur Kayu Berkualitas Premium</title>
-    <meta name="description" content="Yukkayu Furniture menyediakan furnitur kayu jati berkualitas tinggi untuk rumah, kafe, dan bisnis. Garansi 2 tahun, desain custom, dan konsultasi gratis.">
-    <meta name="keywords" content="furniture kayu jati, kitchen set, meja kayu, lemari kayu, furniture custom, furniture jakarta">
-    <link rel="icon" type="image/x-icon" href="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/YUKKAYU%20BG.png?updatedAt=">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Yukkayu Furniture - Furniture Kayu Jati Belanda Premium</title>
+    <link rel="icon" type="image/x-icon" href="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/Yukkayu.jpg?updatedAt=">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'teak': '#6B4423',
-                        'teak-light': '#8B5A2B',
-                        'teak-dark': '#4A2C17',
-                        'cream': '#FAF7F0',
-                        'warm-brown': '#A0522D',
-                        'classic-brown': '#5D4037',
-                        'antique': '#8D6E63',
-                        'gold': '#D4AF37',
-                        'gold-light': '#F7E98E'
+                        'teak': {
+                            50: '#fefbf7',
+                            100: '#fdf4e8',
+                            200: '#f9e6c8',
+                            300: '#f3d1a0',
+                            400: '#ecb470',
+                            500: '#d4954a',
+                            600: '#b8793d',
+                            700: '#9a5f34',
+                            800: '#7d4d2f',
+                            900: '#663f28',
+                            950: '#3a2318'
+                        }
                     },
                     fontFamily: {
-                        'serif': ['Playfair Display', 'serif'],
-                        'sans': ['Inter', 'sans-serif']
-                    },
-                    animation: {
-                        'float': 'float 6s ease-in-out infinite',
-                        'slide-up': 'slideUp 0.5s ease-out',
-                        'fade-in-up': 'fadeInUp 0.6s ease-out',
-                        'bounce-slow': 'bounce 2s infinite',
-                        'pulse-slow': 'pulse 3s infinite'
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-20px)' }
-                        },
-                        slideUp: {
-                            '0%': { transform: 'translateY(100%)', opacity: '0' },
-                            '100%': { transform: 'translateY(0)', opacity: '1' }
-                        },
-                        fadeInUp: {
-                            '0%': { transform: 'translateY(30px)', opacity: '0' },
-                            '100%': { transform: 'translateY(0)', opacity: '1' }
-                        }
+                        'poppins': ['Poppins', 'sans-serif']
                     }
                 }
             }
         }
     </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .hero-pattern {
-            background-image: 
-                radial-gradient(circle at 25% 25%, rgba(139, 69, 19, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 75% 75%, rgba(160, 82, 45, 0.1) 0%, transparent 50%);
-        }
-        
-        .wood-texture {
-            background: linear-gradient(45deg, #8B4513 25%, transparent 25%), 
-                        linear-gradient(-45deg, #8B4513 25%, transparent 25%), 
-                        linear-gradient(45deg, transparent 75%, #A0522D 75%), 
-                        linear-gradient(-45deg, transparent 75%, #A0522D 75%);
-            background-size: 20px 20px;
-            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
-        }
-
-        .fade-in {
-            animation: fadeInUp 0.8s ease-out;
-        }
-
-        .hover-lift {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .hover-lift:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 25px 50px rgba(139, 69, 19, 0.25);
-        }
-
-        .glass-effect {
-            backdrop-filter: blur(10px);
-            background: rgba(255, 255, 255, 0.9);
-        }
-
         .gradient-text {
-            background: linear-gradient(135deg, #6B4423, #A0522D, #D4AF37);
+            background: linear-gradient(135deg, #b8793d, #d4954a);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-
-        .loading-skeleton {
-            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-            background-size: 200% 100%;
-            animation: loading 1.5s infinite;
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
-
-        @keyframes loading {
-            0% { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
+        .wood-grain {
+            background-image: 
+                repeating-linear-gradient(
+                    90deg,
+                    rgba(184, 121, 61, 0.03) 0px,
+                    rgba(184, 121, 61, 0.03) 1px,
+                    transparent 1px,
+                    transparent 20px
+                ),
+                repeating-linear-gradient(
+                    0deg,
+                    rgba(184, 121, 61, 0.03) 0px,
+                    rgba(184, 121, 61, 0.03) 1px,
+                    transparent 1px,
+                    transparent 20px
+                );
         }
-
-        .modal-backdrop {
-            backdrop-filter: blur(5px);
-            background: rgba(0, 0, 0, 0.5);
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
-        .scroll-smooth {
-            scroll-behavior: smooth;
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
         }
-
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
+        .welcome-popup {
+            backdrop-filter: blur(20px);
+            background: rgba(0, 0, 0, 0.8);
+            animation: fadeIn 0.5s ease-out;
         }
-
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
+        .popup-content {
+            animation: slideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
-        ::-webkit-scrollbar-thumb {
-            background: #6B4423;
-            border-radius: 4px;
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #4A2C17;
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(50px) scale(0.9);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
         }
-
-        /* Image lazy loading effect */
-        .lazy-image {
-            transition: opacity 0.3s;
-            opacity: 0;
+        .logo-rounded {
+            border-radius: 50%;
+            box-shadow: 0 10px 30px rgba(184, 121, 61, 0.3);
         }
-
-        .lazy-image.loaded {
-            opacity: 1;
+        .nav-glass {
+            backdrop-filter: blur(20px);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 250, 252, 0.9));
+            border-bottom: 1px solid rgba(184, 121, 61, 0.15);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
         }
-
-        /* Product card hover effects */
-        .product-card {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        .nav-item {
             position: relative;
             overflow: hidden;
         }
-
-        .product-card::before {
+        .nav-item::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: -100%;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #10b981, #059669);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        .nav-item:hover::before {
+            width: 100%;
+        }
+        
+        .floating-elements {
+            position: absolute;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.5s;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        
+        .floating-element {
+            position: absolute;
+            opacity: 0.1;
+            animation: float 20s infinite linear;
+        }
+        
+        .floating-element:nth-child(1) { animation-delay: 0s; }
+        .floating-element:nth-child(2) { animation-delay: -5s; }
+        .floating-element:nth-child(3) { animation-delay: -10s; }
+        .floating-element:nth-child(4) { animation-delay: -15s; }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.1;
+            }
+            90% {
+                opacity: 0.1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        .hero-pattern {
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(184, 121, 61, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(212, 149, 74, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(236, 180, 112, 0.03) 0%, transparent 50%);
+        }
+        
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .glow-effect {
+            box-shadow: 0 0 30px rgba(184, 121, 61, 0.2);
+        }
+        
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fade-in 1s ease-out forwards;
+        }
+        
+        .hover-glow:hover {
+            box-shadow: 0 0 40px rgba(184, 121, 61, 0.3);
+            transform: translateY(-2px);
         }
 
-        .product-card:hover::before {
-            left: 100%;
-        }
-
-        /* Notification styles */
-        .notification {
-            transform: translateX(100%);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .notification.show {
-            transform: translateX(0);
-        }
-
-        /* Price calculator styles */
-        .calculator-input {
-            transition: all 0.3s ease;
-        }
-
-        .calculator-input:focus {
-            transform: scale(1.02);
-            box-shadow: 0 0 0 3px rgba(107, 68, 35, 0.1);
-        }
     </style>
 </head>
-<body class="bg-cream font-sans">
-    <!-- Top Bar -->
-    <div class="bg-teak-dark text-white py-2 text-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-6">
-                    <span class="flex items-center">
-                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                        </svg>
-                        +62 812-3456-7890
-                    </span>
-                    <span class="flex items-center">
-                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10h5v-2h-5c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57V12c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 1.77 1.47 2.96 1.47 1.97 0 3.5-1.53 3.5-3.57V12c0-5.52-4.48-10-10-10z"/>
-                        </svg>
-                        info@yukkayufurniture.com
-                    </span>
+<body class="font-poppins bg-white text-gray-900">
+    <!-- Welcome Popup -->
+    <div id="welcome-popup" class="fixed inset-0 z-50 flex items-center justify-center welcome-popup">
+        <div class="popup-content bg-white rounded-3xl p-8 md:p-12 max-w-md mx-4 text-center shadow-2xl">
+            <div class="mb-6">
+                <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/Yukkayu.jpg?updatedAt=" 
+                     alt="Yukkayu Furniture" 
+                     class="h-20 w-20 mx-auto rounded-full shadow-lg"
+                     onerror="this.src=''; this.alt='Y'; this.className='h-20 w-20 mx-auto bg-teak-600 text-white rounded-full flex items-center justify-center font-bold text-3xl shadow-lg';">
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Selamat Datang!</h2>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                Di <span class="gradient-text font-semibold">Yukkayu Furniture</span>, kami menghadirkan furniture premium dari kayu jati belanda berkualitas tinggi untuk rumah dan kafe impian Anda.
+            </p>
+            <div class="space-y-3 mb-8">
+                <div class="flex items-center justify-center space-x-3 text-teak-600">
+                    <i class="fas fa-check-circle"></i>
+                    <span class="text-sm">Kayu Jati Belanda Premium</span>
                 </div>
-                <div class="hidden md:flex items-center space-x-4">
-                    <span class="text-gold-light">⭐ Gratis Konsultasi & Survey</span>
-                    <button onclick="openWhatsApp('Halo! Saya ingin konsultasi gratis untuk furniture.')" class="bg-green-600 hover:bg-green-700 px-3 py-1 rounded-full text-xs font-medium transition-colors">
-                        Chat Sekarang
-                    </button>
+                <div class="flex items-center justify-center space-x-3 text-teak-600">
+                    <i class="fas fa-check-circle"></i>
+                    <span class="text-sm">Desain Custom Sesuai Kebutuhan</span>
+                </div>
+                <div class="flex items-center justify-center space-x-3 text-teak-600">
+                    <i class="fas fa-check-circle"></i>
+                    <span class="text-sm">Garansi Kualitas Terbaik</span>
                 </div>
             </div>
+            <button onclick="closeWelcomePopup()" class="bg-teak-600 hover:bg-teak-700 text-white px-8 py-3 rounded-full font-semibold transition-all hover:shadow-lg">
+                Jelajahi Koleksi Kami
+            </button>
         </div>
     </div>
 
     <!-- Navigation -->
-    <nav class="glass-effect shadow-xl fixed top-10 left-0 right-0 z-50 border-b border-teak/20 transition-all duration-300" id="main-nav">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="fixed top-0 w-full z-40 nav-glass">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <div class="flex items-center">
-                    <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/Yukkayu.jpg?updatedAt=" alt="Yukkayu Furniture" class="h-14 w-14 object-cover rounded-full mr-4 shadow-lg ring-3 ring-gold ring-opacity-50 lazy-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <div class="text-3xl font-bold font-serif gradient-text">
-                        <span>YUKKAYU</span>
-                        <div class="text-lg font-medium text-teak-light -mt-1">Premium Furniture</div>
+                <div class="flex items-center space-x-4">
+                    <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/Yukkayu.jpg?updatedAt=" 
+                         alt="Yukkayu Furniture" 
+                         class="h-12 w-12 logo-rounded object-cover"
+                         onerror="this.src=''; this.alt='Y'; this.className='h-12 w-12 bg-teak-600 text-white rounded-full flex items-center justify-center font-bold text-xl logo-rounded';">
+                    <div>
+                        <h1 class="text-2xl font-bold gradient-text">Yukkayu</h1>
+                        <p class="text-xs text-gray-500 -mt-1 font-medium">FURNITURE</p>
                     </div>
                 </div>
                 
-                <div class="hidden lg:flex items-center space-x-1">
-                    <a href="#home" class="nav-link group relative px-6 py-3 text-teak-dark font-medium transition-all duration-300 hover:text-teak">
-                        <span class="relative z-10">Beranda</span>
-                        <div class="absolute inset-0 bg-gradient-to-r from-teak/10 to-gold/10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </a>
-                    <div class="relative group">
-                        <button class="nav-link px-6 py-3 text-teak-dark font-medium transition-all duration-300 hover:text-teak flex items-center">
-                            <span>Produk</span>
-                            <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M7 10l5 5 5-5z"/>
-                            </svg>
-                        </button>
-                        <div class="absolute top-full left-0 w-64 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-teak/10">
-                            <div class="p-4 space-y-2">
-                                <a href="#products" class="block px-4 py-3 text-gray-700 hover:text-teak hover:bg-teak/5 rounded-xl transition-colors">
-                                    <div class="font-medium">Semua Produk</div>
-                                    <div class="text-sm text-gray-500">Lihat koleksi lengkap</div>
-                                </a>
-                                <a href="#kitchen" class="block px-4 py-3 text-gray-700 hover:text-teak hover:bg-teak/5 rounded-xl transition-colors">
-                                    <div class="font-medium">Kitchen Set</div>
-                                    <div class="text-sm text-gray-500">Dapur modern & klasik</div>
-                                </a>
-
-                            </div>
-                        </div>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <div class="flex items-center space-x-2 bg-teak-50 px-4 py-2 rounded-full border border-teak-100">
+                        <i class="fas fa-clock text-teak-600 text-sm"></i>
+                        <span id="current-time" class="text-sm font-medium text-teak-700"></span>
                     </div>
-                    <a href="#about" class="nav-link group relative px-6 py-3 text-teak-dark font-medium transition-all duration-300 hover:text-teak">
-                        <span class="relative z-10">Tentang</span>
-                        <div class="absolute inset-0 bg-gradient-to-r from-teak/10 to-gold/10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </a>
-                    <a href="#gallery" class="nav-link group relative px-6 py-3 text-teak-dark font-medium transition-all duration-300 hover:text-teak">
-                        <span class="relative z-10">Galeri</span>
-                        <div class="absolute inset-0 bg-gradient-to-r from-teak/10 to-gold/10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </a>
-                    <a href="#contact" class="nav-link group relative px-6 py-3 text-teak-dark font-medium transition-all duration-300 hover:text-teak">
-                        <span class="relative z-10">Kontak</span>
-                        <div class="absolute inset-0 bg-gradient-to-r from-teak/10 to-gold/10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </a>
-                </div>
-
-                <div class="hidden lg:flex items-center space-x-4">
-                    <button onclick="openWhatsApp('Halo! Saya ingin konsultasi furniture untuk kebutuhan saya.')" class="bg-gradient-to-r from-teak to-teak-dark text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                        📞 Konsultasi
-                    </button>
+                    <a href="#home" class="nav-item text-gray-700 hover:text-emerald-600 font-medium transition-all py-2 px-1">Beranda</a>
+                    <a href="#products" class="nav-item text-gray-700 hover:text-emerald-600 font-medium transition-all py-2 px-1">Produk</a>
+                    <a href="#services" class="nav-item text-gray-700 hover:text-emerald-600 font-medium transition-all py-2 px-1">Layanan</a>
+                    <a href="#about" class="nav-item text-gray-700 hover:text-emerald-600 font-medium transition-all py-2 px-1">Tentang</a>
+                    <a href="#contact" class="bg-gradient-to-r from-teak-600 via-teak-700 to-emerald-600 hover:from-emerald-600 hover:via-teak-600 hover:to-teak-700 text-white px-8 py-3 rounded-full font-medium transition-all hover:shadow-xl hover:scale-105 transform">Kontak</a>
                 </div>
                 
-                <button id="mobile-menu-btn" class="lg:hidden text-teak-dark hover:bg-teak/10 p-3 rounded-xl transition-all duration-300">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 hover:bg-teak-50 rounded-lg transition-colors">
+                    <i class="fas fa-bars text-gray-700"></i>
                 </button>
             </div>
         </div>
         
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="lg:hidden hidden bg-white/95 backdrop-blur-md border-t border-teak/20 shadow-xl">
-            <div class="px-4 pt-4 pb-6 space-y-3">
-                <a href="#home" class="mobile-nav-link block px-4 py-3 text-teak-dark font-medium rounded-xl hover:bg-teak/10 transition-colors">Beranda</a>
-                <a href="#products" class="mobile-nav-link block px-4 py-3 text-gray-700 font-medium rounded-xl hover:bg-teak/10 hover:text-teak transition-colors">Produk</a>
-                <a href="#kitchen" class="mobile-nav-link block px-4 py-3 text-gray-700 font-medium rounded-xl hover:bg-teak/10 hover:text-teak transition-colors">Kitchen Set</a>
-                <a href="#about" class="mobile-nav-link block px-4 py-3 text-gray-700 font-medium rounded-xl hover:bg-teak/10 hover:text-teak transition-colors">Tentang</a>
-                <a href="#gallery" class="mobile-nav-link block px-4 py-3 text-gray-700 font-medium rounded-xl hover:bg-teak/10 hover:text-teak transition-colors">Galeri</a>
-                <a href="#contact" class="mobile-nav-link block px-4 py-3 text-gray-700 font-medium rounded-xl hover:bg-teak/10 hover:text-teak transition-colors">Kontak</a>
-                <div class="pt-4 border-t border-teak/20 space-y-3">
-                    <button onclick="openWhatsApp('Halo! Saya ingin konsultasi furniture.')" class="w-full bg-gradient-to-r from-teak to-teak-dark text-white px-4 py-3 rounded-xl font-semibold">
-                        📞 Konsultasi
-                    </button>
-                </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white/95 backdrop-blur-20 border-t border-gray-100">
+            <div class="px-6 py-4 space-y-4">
+                <a href="#home" class="block text-gray-700 hover:text-teak-600 font-medium py-2">Beranda</a>
+                <a href="#products" class="block text-gray-700 hover:text-teak-600 font-medium py-2">Produk</a>
+                <a href="#services" class="block text-gray-700 hover:text-teak-600 font-medium py-2">Layanan</a>
+                <a href="#about" class="block text-gray-700 hover:text-teak-600 font-medium py-2">Tentang</a>
+                <a href="#contact" class="block bg-teak-600 text-white px-6 py-3 rounded-full font-medium text-center hover:bg-teak-700 transition-colors">Kontak</a>
             </div>
         </div>
     </nav>
 
-    <!-- Welcome Popup -->
-    <div id="welcome-popup" class="fixed inset-0 modal-backdrop z-50 flex items-center justify-center" style="display: none;">
-        <div class="bg-white rounded-3xl p-8 max-w-md mx-4 text-center shadow-2xl animate-slide-up" id="popup-content">
-            <div class="w-20 h-20 bg-gradient-to-br from-teak to-gold rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse-slow">
-                <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                </svg>
-            </div>
-            <h2 class="text-2xl font-bold gradient-text mb-4">Selamat Datang di Yukkayu Furniture!</h2>
-            <p class="text-gray-600 mb-6 leading-relaxed">
-                Temukan koleksi furnitur kayu jati berkualitas tinggi untuk rumah, kafe, dan bisnis Anda. Dapatkan konsultasi gratis dari tim ahli kami!
-            </p>
-            <div class="space-y-3">
-                <button onclick="openWhatsApp('Halo! Saya baru mengunjungi website Yukkayu Furniture dan tertarik untuk konsultasi.')" class="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
-                    💬 Chat WhatsApp Sekarang
-                </button>
-                <button onclick="closeWelcomePopup()" class="w-full border-2 border-teak text-teak hover:bg-teak hover:text-white py-3 rounded-full font-semibold transition-all duration-300">
-                    Jelajahi Website
-                </button>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- Notification Toast -->
-    <div id="notification" class="fixed top-24 right-4 bg-white border-l-4 border-green-500 rounded-lg shadow-lg p-4 notification z-40">
-        <div class="flex items-center">
-            <div class="flex-shrink-0">
-                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-            </div>
-            <div class="ml-3">
-                <p id="notification-text" class="text-sm font-medium text-gray-900"></p>
-            </div>
-        </div>
-    </div>
-
     <!-- Hero Section -->
-    <section id="home" class="relative min-h-screen flex items-center overflow-hidden pt-16">
-        <!-- Background with wood texture and modern gradient -->
-        <div class="absolute inset-0 bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-100"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-teak/10 via-transparent to-warm-brown/20"></div>
+    <section id="home" class="pt-20 min-h-screen flex items-center relative overflow-hidden">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-teak-25 via-white to-amber-25 hero-pattern">
+            <div class="absolute inset-0 wood-grain opacity-20"></div>
+            
+            <!-- Floating Elements -->
+            <div class="floating-elements">
+                <div class="floating-element" style="left: 10%; font-size: 3rem; color: #b8793d;">
+                    <i class="fas fa-tree"></i>
+                </div>
+                <div class="floating-element" style="left: 80%; font-size: 2rem; color: #d4954a;">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="floating-element" style="left: 60%; font-size: 2.5rem; color: #ecb470;">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <div class="floating-element" style="left: 30%; font-size: 1.5rem; color: #b8793d;">
+                    <i class="fas fa-spa"></i>
+                </div>
+            </div>
+            <!-- Abstract Waves -->
+            <div class="absolute inset-0 overflow-hidden">
+                <svg class="absolute w-full h-full" viewBox="0 0 1200 800" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="wave1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#d4954a;stop-opacity:0.08" />
+                            <stop offset="50%" style="stop-color:#b8793d;stop-opacity:0.12" />
+                            <stop offset="100%" style="stop-color:#d4954a;stop-opacity:0.08" />
+                        </linearGradient>
+                        <linearGradient id="wave2" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#b8793d;stop-opacity:0.06" />
+                            <stop offset="50%" style="stop-color:#ecb470;stop-opacity:0.10" />
+                            <stop offset="100%" style="stop-color:#b8793d;stop-opacity:0.06" />
+                        </linearGradient>
+                        <linearGradient id="wave3" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#ecb470;stop-opacity:0.05" />
+                            <stop offset="50%" style="stop-color:#f3d1a0;stop-opacity:0.08" />
+                            <stop offset="100%" style="stop-color:#ecb470;stop-opacity:0.05" />
+                        </linearGradient>
+                    </defs>
+                    
+                    <!-- Wave 1 -->
+                    <path d="M0,400 C300,300 600,500 1200,350 L1200,800 L0,800 Z" fill="url(#wave1)">
+                        <animateTransform attributeName="transform" type="translate" values="0,0;50,0;0,0" dur="20s" repeatCount="indefinite"/>
+                    </path>
+                    
+                    <!-- Wave 2 -->
+                    <path d="M0,500 C400,350 800,600 1200,450 L1200,800 L0,800 Z" fill="url(#wave2)">
+                        <animateTransform attributeName="transform" type="translate" values="0,0;-30,0;0,0" dur="25s" repeatCount="indefinite"/>
+                    </path>
+                    
+                    <!-- Wave 3 -->
+                    <path d="M0,600 C350,450 700,650 1200,550 L1200,800 L0,800 Z" fill="url(#wave3)">
+                        <animateTransform attributeName="transform" type="translate" values="0,0;40,0;0,0" dur="30s" repeatCount="indefinite"/>
+                    </path>
+                </svg>
+            </div>
+        </div>
         
-        <!-- Floating elements for modern touch -->
-        <div class="absolute top-20 left-10 w-32 h-32 bg-teak/10 rounded-full blur-3xl animate-pulse"></div>
-        <div class="absolute bottom-20 right-10 w-40 h-40 bg-warm-brown/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div class="absolute top-1/2 left-1/4 w-24 h-24 bg-teak-light/10 rounded-full blur-2xl animate-pulse delay-500"></div>
-        
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <!-- Left Content -->
-                <div class="fade-in space-y-8">
-                    <!-- Brand Badge -->
-                    <div class="inline-flex items-center bg-white/80 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg border border-teak/20">
-                        <div class="w-3 h-3 bg-teak rounded-full mr-3 animate-pulse"></div>
-                        <span class="text-teak font-semibold text-sm tracking-wide">PREMIUM TEAK FURNITURE</span>
+                <div class="space-y-8">
+                    <!-- Badge -->
+                    <div class="inline-flex items-center space-x-2 bg-gradient-to-r from-teak-100 to-amber-100 px-6 py-3 rounded-full border border-teak-200 shadow-lg">
+                        <div class="w-3 h-3 bg-gradient-to-r from-teak-500 to-amber-500 rounded-full animate-pulse"></div>
+                        <span class="text-sm font-semibold text-gray-700">Premium Furniture Sejak 2015</span>
                     </div>
                     
-                    <!-- Main Title -->
-                    <div class="space-y-4">
-                        <div class="text-7xl lg:text-8xl font-black leading-none">
-                            <span class="bg-gradient-to-r from-teak-dark via-teak to-warm-brown bg-clip-text text-transparent">YUKKAYU</span>
-                        </div>
-                        <div class="text-4xl lg:text-6xl font-bold text-teak-dark tracking-tight">
-                            FURNITURE
-                        </div>
-                        <!-- Decorative line -->
-                        <div class="flex items-center space-x-4">
-                            <div class="w-16 h-1 bg-gradient-to-r from-teak to-warm-brown rounded-full"></div>
-                            <div class="w-8 h-1 bg-teak-light rounded-full"></div>
-                            <div class="w-4 h-1 bg-teak rounded-full"></div>
-                        </div>
-                    </div>
-                    
-                    <!-- Subtitle -->
-                    <h1 class="text-3xl lg:text-4xl font-bold text-teak-dark leading-tight">
-                        Keindahan <span class="text-warm-brown">Kayu Jati</span> Belanda
+                    <h1 class="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight text-shadow">
+                        Furniture Premium
+                        <span class="block bg-gradient-to-r from-teak-600 via-teak-700 to-amber-600 bg-clip-text text-transparent glow-effect">Kayu Jati Belanda</span>
                     </h1>
                     
-                    <!-- Description -->
-                    <p class="text-xl text-gray-700 leading-relaxed max-w-xl">
-                        Hadirkan kehangatan dan kemewahan dalam rumah, kafe, atau bisnis Anda dengan koleksi furnitur kayu jati berkualitas tinggi dari Yukkayu Furniture.
+                    <p class="text-xl text-gray-600 leading-relaxed max-w-lg opacity-0 animate-fade-in" style="animation-delay: 0.5s;">
+                        Menghadirkan furniture berkualitas tinggi dari kayu jati belanda premium. 
+                        Sempurna untuk rumah dan kafe dengan desain modern klasik yang elegan.
                     </p>
                     
                     <!-- Features -->
-                    <div class="grid grid-cols-3 gap-6">
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-gradient-to-br from-teak to-teak-dark rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg">
-                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
+                    <div class="grid grid-cols-2 gap-4 py-4">
+                        <div class="flex items-center space-x-3 group hover-glow transition-all duration-300 p-2 rounded-lg">
+                            <div class="w-8 h-8 bg-gradient-to-br from-teak-500 to-teak-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-check text-white text-sm"></i>
                             </div>
-                            <h3 class="font-bold text-teak text-sm">Premium Quality</h3>
+                            <span class="text-gray-700 font-medium group-hover:text-teak-700 transition-colors">100% Eco Friendly</span>
                         </div>
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-gradient-to-br from-warm-brown to-teak rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg">
-                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                </svg>
+                        <div class="flex items-center space-x-3 group hover-glow transition-all duration-300 p-2 rounded-lg">
+                            <div class="w-8 h-8 bg-gradient-to-br from-teak-600 to-teak-700 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-shipping-fast text-white text-sm"></i>
                             </div>
-                            <h3 class="font-bold text-teak text-sm">2 Years Warranty</h3>
+                            <span class="text-gray-700 font-medium group-hover:text-teak-700 transition-colors">Gratis Ongkir</span>
                         </div>
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-gradient-to-br from-teak-light to-warm-brown rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg">
-                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H7v-2h5v2zm5-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                                </svg>
+                        <div class="flex items-center space-x-3 group hover-glow transition-all duration-300 p-2 rounded-lg">
+                            <div class="w-8 h-8 bg-gradient-to-br from-teak-700 to-amber-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-award text-white text-sm"></i>
                             </div>
-                            <h3 class="font-bold text-teak text-sm">Custom Design</h3>
+                            <span class="text-gray-700 font-medium group-hover:text-teak-700 transition-colors">Garansi Kualitas</span>
+                        </div>
+                        <div class="flex items-center space-x-3 group hover-glow transition-all duration-300 p-2 rounded-lg">
+                            <div class="w-8 h-8 bg-gradient-to-br from-amber-600 to-teak-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-tools text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium group-hover:text-teak-700 transition-colors">Custom Design</span>
                         </div>
                     </div>
                     
-                    <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                        <button onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})" class="group bg-gradient-to-r from-teak to-teak-dark hover:from-teak-dark hover:to-teak text-white px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">
-                            <span class="flex items-center justify-center">
-                                Lihat Koleksi
-                                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                                </svg>
-                            </span>
-                        </button>
-                        <button onclick="openWhatsApp('Halo! Saya ingin konsultasi gratis mengenai produk furnitur kayu jati Yukkayu Furniture.')" class="group border-3 border-teak text-teak hover:bg-teak hover:text-white px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl">
-                            <span class="flex items-center justify-center">
-                                💬 Konsultasi Gratis
-                            </span>
-                        </button>
+                        <a href="#products" class="group bg-gradient-to-r from-teak-600 via-teak-700 to-amber-600 hover:from-amber-600 hover:via-teak-600 hover:to-teak-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-2xl hover:scale-105 transform flex items-center justify-center space-x-2 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                            <span class="relative z-10">Lihat Koleksi</span>
+                            <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform duration-300 relative z-10"></i>
+                        </a>
+                        <a href="https://wa.me/6282118147705" class="group border-2 border-teak-600 text-teak-600 hover:bg-gradient-to-r hover:from-teak-600 hover:to-amber-600 hover:text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center space-x-2 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-r from-teak-600 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <i class="fab fa-whatsapp group-hover:scale-110 transition-transform duration-300 relative z-10"></i>
+                            <span class="relative z-10">WhatsApp</span>
+                        </a>
                     </div>
                 </div>
                 
-                <!-- Right Content -->
-                <div class="fade-in relative">
-                    <!-- Main Product Card -->
-                    <div class="relative bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border border-teak/10">
-                        <!-- Product Image -->
-                        <div class="relative w-full h-96 bg-gradient-to-br from-teak-light/20 to-warm-brown/20 rounded-2xl overflow-hidden mb-6">
-                            <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/WhatsApp%20Image%202025-08-26%20at%2012.12.00.jpeg?updatedAt=" alt="Produk Yukkayu Furniture" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                            <div class="hidden w-full h-full bg-gradient-to-br from-teak to-warm-brown flex items-center justify-center">
-                                <svg class="w-32 h-32 text-white/50" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
-                                </svg>
-                            </div>
-                            <!-- Floating badge -->
-                            <div class="absolute top-4 right-4 bg-teak text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-                                Premium
+                <div class="relative transform hover:scale-105 transition-transform duration-500">
+                    <!-- Main Card -->
+                    <div class="bg-white/80 backdrop-blur-xl rounded-3xl p-8 shadow-2xl relative overflow-hidden border border-white/20 hover:shadow-3xl transition-shadow duration-500">
+                        <!-- Decorative elements -->
+                        <div class="absolute -top-6 -left-6 w-24 h-24 bg-gradient-to-br from-teak-200 to-amber-200 rounded-full opacity-50 blur-2xl animate-pulse"></div>
+                        <div class="absolute -bottom-6 -right-6 w-20 h-20 bg-gradient-to-br from-teak-200 to-teak-300 rounded-full opacity-50 blur-2xl animate-pulse" style="animation-delay: 1s;"></div>
+                        <div class="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-amber-200 to-teak-200 rounded-full opacity-35 blur-xl animate-bounce" style="animation-delay: 2s;"></div>
+                        
+                        <!-- Shimmer effect -->
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
+                        
+                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/WhatsApp%20Image%202025-08-26%20at%2012.12.00.jpeg?updatedAt=" 
+                             alt="Produk Yukkayu Furniture" 
+                             class="w-full h-80 object-cover rounded-2xl relative z-10 shadow-xl"
+                             onerror="this.src=''; this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="hidden bg-gradient-to-br from-teak-100 via-emerald-50 to-teak-200 rounded-2xl h-80 flex items-center justify-center relative z-10">
+                            <div class="text-center">
+                                <div class="w-24 h-24 bg-gradient-to-br from-teak-600 to-emerald-600 rounded-full flex items-center justify-center mb-6 mx-auto shadow-xl">
+                                    <i class="fas fa-tree text-4xl text-white"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold text-teak-900 mb-4">Kayu Jati Belanda</h3>
+                                <p class="text-gray-700">Kualitas premium dengan daya tahan luar biasa</p>
                             </div>
                         </div>
                         
-                        <!-- Product Info -->
-                        <div class="text-center space-y-4">
-                            <h3 class="text-2xl font-bold text-teak">Kualitas Premium</h3>
-                            <p class="text-gray-600 leading-relaxed">Kayu jati pilihan dengan finishing terbaik untuk kebutuhan furniture rumah dan bisnis Anda</p>
-                            
-                            <!-- Stats -->
-                            <div class="grid grid-cols-3 gap-4 pt-4">
-                                <div class="text-center">
-                                    <div class="text-2xl font-bold text-teak">500+</div>
-                                    <div class="text-xs text-gray-500">Pelanggan</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-2xl font-bold text-teak">15+</div>
-                                    <div class="text-xs text-gray-500">Tahun</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-2xl font-bold text-teak">⭐ 4.9</div>
-                                    <div class="text-xs text-gray-500">Rating</div>
-                                </div>
-                            </div>
+                        <div class="mt-6 text-center relative z-10">
+                            <h3 class="text-xl font-semibold bg-gradient-to-r from-teak-800 to-emerald-800 bg-clip-text text-transparent mb-2">Produk Terbaru Kami</h3>
+                            <p class="text-gray-600">Furniture berkualitas tinggi dengan desain modern klasik</p>
                         </div>
                     </div>
                     
-                    <!-- Floating mini cards -->
-                    <div class="absolute -top-6 -left-6 bg-white rounded-2xl shadow-xl p-4 border border-teak/10">
-                        <div class="flex items-center space-x-3">
-                            <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center">
-                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <div class="font-bold text-gray-800 text-sm">Eco Friendly</div>
-                                <div class="text-xs text-gray-500">Sustainable Wood</div>
-                            </div>
+                    <!-- Floating Stats -->
+                    <div class="absolute -top-4 -right-4 bg-white/90 backdrop-blur-xl rounded-2xl p-4 shadow-xl border border-white/20 hover:scale-110 transition-transform duration-300 hover:shadow-2xl">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold bg-gradient-to-r from-teak-600 to-amber-600 bg-clip-text text-transparent animate-pulse">150+</div>
+                            <div class="text-xs text-gray-600">Proyek Selesai</div>
                         </div>
                     </div>
                     
-                    <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-4 border border-teak/10">
-                        <div class="flex items-center space-x-3">
-                            <div class="w-12 h-12 bg-gradient-to-br from-teak to-teak-dark rounded-xl flex items-center justify-center">
-                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <div class="font-bold text-gray-800 text-sm">Free Delivery</div>
-                                <div class="text-xs text-gray-500">Jakarta Area</div>
-                            </div>
+                    <div class="absolute -bottom-4 -left-4 bg-white/90 backdrop-blur-xl rounded-2xl p-4 shadow-xl border border-white/20 hover:scale-110 transition-transform duration-300 hover:shadow-2xl">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold bg-gradient-to-r from-teak-600 to-amber-600 bg-clip-text text-transparent animate-pulse" style="animation-delay: 0.5s;">9+</div>
+                            <div class="text-xs text-gray-600">Tahun Pengalaman</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Scroll indicator -->
+                    <div class="absolute -bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
+                        <div class="w-6 h-10 border-2 border-teak-600 rounded-full flex justify-center bg-white/20 backdrop-blur-sm">
+                            <div class="w-1 h-3 bg-gradient-to-b from-teak-600 to-amber-600 rounded-full mt-2 animate-pulse"></div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        
-        <!-- Scroll indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <div class="w-6 h-10 border-2 border-teak rounded-full flex justify-center">
-                <div class="w-1 h-3 bg-teak rounded-full mt-2 animate-pulse"></div>
             </div>
         </div>
     </section>
 
     <!-- Products Section -->
-    <section id="products" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-teak-dark mb-4 font-serif">Koleksi Unggulan</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Temukan berbagai pilihan furnitur kayu jati yang menggabungkan keindahan tradisional dengan desain modern
+    <section id="products" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    Katalog <span class="gradient-text">Furniture</span> Kami
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
+                    Jelajahi koleksi furniture premium kami yang dibuat dengan keahlian tinggi untuk mempercantik ruang Anda
                 </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Product 1 -->
-                <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover-lift border border-gray-100">
-                    <div class="h-80 bg-gradient-to-br from-teak to-teak-light flex items-center justify-center rounded-t-3xl overflow-hidden relative group">
-                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/WhatsApp%20Image%202025-08-26%20at%2012.11.56%20(1).jpeg?updatedAt=" alt="Furniture Kayu Jati" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <svg class="w-24 h-24 text-white hidden" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 4h2v5l-1-.75L9 9V4zm9 16H6V4h1v9l3-2.25L13 13V4h5v16z"/>
-                        </svg>
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <button onclick="openWhatsApp('Halo, saya tertarik dengan produk furniture ini. Bisa minta info lengkap dan harganya?')" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform scale-95 group-hover:scale-100">
-                                💬 Tanya via WhatsApp
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 2 -->
-                <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover-lift border border-gray-100">
-                    <div class="h-80 bg-gradient-to-br from-teak-light to-warm-brown flex items-center justify-center rounded-t-3xl overflow-hidden relative group">
-                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/WhatsApp%20Image%202025-08-26%20at%2012.11.55.jpeg?updatedAt=" alt="Furniture Kayu Jati" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <svg class="w-24 h-24 text-white hidden" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V6H1v15h2v-3h18v3h2V10c0-1.66-1.34-3-3-3z"/>
-                        </svg>
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <button onclick="openWhatsApp('Halo, saya tertarik dengan produk furniture ini. Bisa minta info lengkap dan harganya?')" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform scale-95 group-hover:scale-100">
-                                💬 Tanya via WhatsApp
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover-lift border border-gray-100">
-                    <div class="h-80 bg-gradient-to-br from-warm-brown to-teak flex items-center justify-center rounded-t-3xl overflow-hidden relative group">
-                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/WhatsApp%20Image%202025-08-26%20at%2012.14.59.jpeg?updatedAt=" alt="Furniture Kayu Jati" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <svg class="w-24 h-24 text-white hidden" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M20 9V7c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c-1.1 0-2 .9-2 2v8h20v-8c0-1.1-.9-2-2-2zM6 7h12v2H6V7z"/>
-                        </svg>
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <button onclick="openWhatsApp('Halo, saya tertarik dengan produk furniture ini. Bisa minta info lengkap dan harganya?')" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform scale-95 group-hover:scale-100">
-                                💬 Tanya via WhatsApp
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Kitchen Set Section -->
-    <section id="kitchen" class="py-20 bg-gradient-to-br from-teak-dark to-teak">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-white mb-4 font-serif">Kitchen Set Kayu Jati</h2>
-                <p class="text-xl text-cream max-w-3xl mx-auto">
-                    Solusi kitchen set premium untuk rumah, kafe, dan restoran dengan material kayu jati berkualitas tinggi
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="bg-white rounded-3xl p-8 shadow-2xl">
-                    <h3 class="text-2xl font-bold text-teak mb-6">Keunggulan Kitchen Set Kami</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <div class="w-8 h-8 bg-teak rounded-full flex items-center justify-center mr-4 mt-1">
-                                <span class="text-white text-sm">✓</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-800">Tahan Lama & Anti Rayap</h4>
-                                <p class="text-gray-600">Kayu jati alami yang tahan terhadap kelembaban dan serangga</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="w-8 h-8 bg-teak rounded-full flex items-center justify-center mr-4 mt-1">
-                                <span class="text-white text-sm">✓</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-800">Desain Custom</h4>
-                                <p class="text-gray-600">Disesuaikan dengan kebutuhan dan ukuran ruang Anda</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="w-8 h-8 bg-teak rounded-full flex items-center justify-center mr-4 mt-1">
-                                <span class="text-white text-sm">✓</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-800">Finishing Premium</h4>
-                                <p class="text-gray-600">Menggunakan cat dan finishing berkualitas tinggi</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button onclick="openWhatsApp('Halo! Saya tertarik dengan Kitchen Set kayu jati. Bisa konsultasi mengenai desain dan harga?')" class="mt-8 bg-teak hover:bg-teak-dark text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
-                        Konsultasi Kitchen Set
-                    </button>
-                </div>
                 
-                <div class="grid grid-cols-2 gap-6">
-                    <div class="bg-white rounded-3xl p-6 text-center shadow-xl hover-lift">
-                        <div class="w-16 h-16 bg-teak rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H7v-2h5v2zm5-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                            </svg>
-                        </div>
-                        <h4 class="font-bold text-teak mb-2">Kitchen Set Rumah</h4>
-                        <p class="text-gray-600 text-sm">Mulai dari Rp 15 juta</p>
-                    </div>
-                    
-                    <div class="bg-white rounded-3xl p-6 text-center shadow-xl hover-lift">
-                        <div class="w-16 h-16 bg-teak rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                        </div>
-                        <h4 class="font-bold text-teak mb-2">Kitchen Set Kafe</h4>
-                        <p class="text-gray-600 text-sm">Mulai dari Rp 25 juta</p>
-                    </div>
-                    
-                    <div class="bg-white rounded-3xl p-6 text-center shadow-xl hover-lift">
-                        <div class="w-16 h-16 bg-teak rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 4h2v5l-1-.75L9 9V4zm9 16H6V4h1v9l3-2.25L13 13V4h5v16z"/>
-                            </svg>
-                        </div>
-                        <h4 class="font-bold text-teak mb-2">Kitchen Set Restoran</h4>
-                        <p class="text-gray-600 text-sm">Mulai dari Rp 50 juta</p>
-                    </div>
-                    
-                    <div class="bg-white rounded-3xl p-6 text-center shadow-xl hover-lift">
-                        <div class="w-16 h-16 bg-teak rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <!-- Feature Badges -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
+                    <div class="flex items-center space-x-4 bg-gradient-to-r from-green-50 to-emerald-50 px-8 py-4 rounded-2xl border border-green-100 shadow-lg hover:shadow-xl transition-all">
+                        <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg">
+                            <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                             </svg>
                         </div>
-                        <h4 class="font-bold text-teak mb-2">Garansi 2 Tahun</h4>
-                        <p class="text-gray-600 text-sm">Kualitas terjamin</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-20 bg-gradient-to-br from-gray-50 to-cream">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold gradient-text mb-4 font-serif">Galeri Karya Kami</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Lihat berbagai proyek furniture kayu jati yang telah kami kerjakan untuk rumah, kafe, dan bisnis
-                </p>
-            </div>
-            
-
-            
-            <!-- Gallery Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-grid">
-                <!-- Kitchen Set Items -->
-                <div class="gallery-item kitchen group cursor-pointer" onclick="openImageModal('https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/WhatsApp%20Image%202025-08-26%20at%2012.11.55.jpeg?updatedAt=', 'Kitchen Set Modern')">
-                    <div class="relative overflow-hidden rounded-2xl shadow-xl hover-lift">
-                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/WhatsApp%20Image%202025-08-26%20at%2012.11.55.jpeg?updatedAt=" alt="Kitchen Set Modern" class="w-full h-64 object-cover lazy-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="hidden w-full h-64 bg-gradient-to-br from-teak to-warm-brown flex items-center justify-center">
-                            <svg class="w-16 h-16 text-white/50" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V6H1v15h2v-3h18v3h2V10c0-1.66-1.34-3-3-3z"/>
-                            </svg>
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
-                            <button onclick="openWhatsApp('Halo, saya tertarik dengan produk furniture ini. Bisa minta info lengkap dan harganya?')" class="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full font-semibold transition-all duration-300">
-                                💬 Tanya via WhatsApp
-                            </button>
-                        </div>
-                        <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                            </svg>
+                        <div class="text-left">
+                            <div class="font-bold text-gray-800 text-lg">100% Eco Friendly</div>
+                            <div class="text-sm text-green-700">Kayu Jati Belanda Berkelanjutan</div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Dining Table Items -->
-                <div class="gallery-item dining group cursor-pointer" onclick="openImageModal('https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/WhatsApp%20Image%202025-08-26%20at%2012.14.59.jpeg?updatedAt=', 'Meja Makan Kayu Jati')">
-                    <div class="relative overflow-hidden rounded-2xl shadow-xl hover-lift">
-                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/WhatsApp%20Image%202025-08-26%20at%2012.14.59.jpeg?updatedAt=" alt="Meja Makan Kayu Jati" class="w-full h-64 object-cover lazy-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="hidden w-full h-64 bg-gradient-to-br from-warm-brown to-teak flex items-center justify-center">
-                            <svg class="w-16 h-16 text-white/50" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20 9V7c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c-1.1 0-2 .9-2 2v8h20v-8c0-1.1-.9-2-2-2zM6 7h12v2H6V7z"/>
+                    
+                    <div class="flex items-center space-x-4 bg-gradient-to-r from-teak-50 to-orange-50 px-8 py-4 rounded-2xl border border-teak-100 shadow-lg hover:shadow-xl transition-all">
+                        <div class="w-14 h-14 bg-gradient-to-br from-teak-600 to-teak-700 rounded-2xl flex items-center justify-center shadow-lg">
+                            <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20,8h-3V4H3C2.45,4 2,4.45 2,5v11c0,0.55 0.45,1 1,1h4c0,1.66 1.34,3 3,3s3-1.34 3-3h4c0,1.66 1.34,3 3,3s3-1.34 3-3c0-0.55-0.45-1-1-1h-1V8z M10,18.5c-0.83,0-1.5-0.67-1.5-1.5s0.67-1.5 1.5-1.5s1.5,0.67 1.5,1.5S10.83,18.5 10,18.5z M20,18.5c-0.83,0-1.5-0.67-1.5-1.5s0.67-1.5 1.5-1.5s1.5,0.67 1.5,1.5S20.83,18.5 20,18.5z"/>
                             </svg>
                         </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
-                            <button onclick="openWhatsApp('Halo, saya tertarik dengan produk furniture ini. Bisa minta info lengkap dan harganya?')" class="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full font-semibold transition-all duration-300">
-                                💬 Tanya via WhatsApp
-                            </button>
-                        </div>
-                        <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Bedroom Items -->
-                <div class="gallery-item bedroom group cursor-pointer" onclick="openImageModal('https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/WhatsApp%20Image%202025-08-26%20at%2012.11.56%20(1).jpeg?updatedAt=', 'Rak Buku & Storage')">
-                    <div class="relative overflow-hidden rounded-2xl shadow-xl hover-lift">
-                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/WhatsApp%20Image%202025-08-26%20at%2012.11.56%20(1).jpeg?updatedAt=" alt="Rak Buku & Storage" class="w-full h-64 object-cover lazy-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="hidden w-full h-64 bg-gradient-to-br from-teak to-teak-light flex items-center justify-center">
-                            <svg class="w-16 h-16 text-white/50" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 4h2v5l-1-.75L9 9V4zm9 16H6V4h1v9l3-2.25L13 13V4h5v16z"/>
-                            </svg>
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
-                            <button onclick="openWhatsApp('Halo, saya tertarik dengan produk furniture ini. Bisa minta info lengkap dan harganya?')" class="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full font-semibold transition-all duration-300">
-                                💬 Tanya via WhatsApp
-                            </button>
-                        </div>
-                        <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Add more gallery items with different categories -->
-                <div class="gallery-item office group cursor-pointer" onclick="openImageModal('https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/WhatsApp%20Image%202025-08-26%20at%2012.12.00.jpeg?updatedAt=', 'Furniture Kantor')">
-                    <div class="relative overflow-hidden rounded-2xl shadow-xl hover-lift">
-                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/WhatsApp%20Image%202025-08-26%20at%2012.12.00.jpeg?updatedAt=" alt="Furniture Kantor" class="w-full h-64 object-cover lazy-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="hidden w-full h-64 bg-gradient-to-br from-teak-dark to-warm-brown flex items-center justify-center">
-                            <svg class="w-16 h-16 text-white/50" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
-                            </svg>
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
-                            <button onclick="openWhatsApp('Halo, saya tertarik dengan produk furniture ini. Bisa minta info lengkap dan harganya?')" class="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full font-semibold transition-all duration-300">
-                                💬 Tanya via WhatsApp
-                            </button>
-                        </div>
-                        <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- More kitchen items -->
-                <div class="gallery-item kitchen group cursor-pointer" onclick="openImageModal('https://via.placeholder.com/400x300/8B5A2B/FFFFFF?text=Kitchen+Set+2', 'Kitchen Set Klasik')">
-                    <div class="relative overflow-hidden rounded-2xl shadow-xl hover-lift">
-                        <div class="w-full h-64 bg-gradient-to-br from-teak-light to-warm-brown flex items-center justify-center">
-                            <div class="text-center text-white">
-                                <svg class="w-16 h-16 mx-auto mb-4 opacity-50" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V6H1v15h2v-3h18v3h2V10c0-1.66-1.34-3-3-3z"/>
-                                </svg>
-                                <h3 class="text-lg font-bold">Kitchen Set Klasik</h3>
-                                <p class="text-sm opacity-75">Desain tradisional</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- More dining items -->
-                <div class="gallery-item dining group cursor-pointer" onclick="openImageModal('https://via.placeholder.com/400x300/A0522D/FFFFFF?text=Dining+Set', 'Set Meja Makan Lengkap')">
-                    <div class="relative overflow-hidden rounded-2xl shadow-xl hover-lift">
-                        <div class="w-full h-64 bg-gradient-to-br from-warm-brown to-teak flex items-center justify-center">
-                            <div class="text-center text-white">
-                                <svg class="w-16 h-16 mx-auto mb-4 opacity-50" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M20 9V7c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c-1.1 0-2 .9-2 2v8h20v-8c0-1.1-.9-2-2-2zM6 7h12v2H6V7z"/>
-                                </svg>
-                                <h3 class="text-lg font-bold">Set Meja Makan Lengkap</h3>
-                                <p class="text-sm opacity-75">Meja + 6 kursi</p>
-                            </div>
+                        <div class="text-left">
+                            <div class="font-bold text-gray-800 text-lg">Gratis Ongkir</div>
+                            <div class="text-sm text-teak-700">Khusus Area Jakarta & Sekitarnya</div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <!-- Load More Button -->
-            <div class="text-center mt-12">
-                <button onclick="loadMoreGallery()" class="bg-gradient-to-r from-teak to-teak-dark text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                    Lihat Lebih Banyak
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Image Modal -->
-    <div id="image-modal" class="fixed inset-0 modal-backdrop z-50 flex items-center justify-center" style="display: none;">
-        <div class="relative max-w-4xl mx-4 bg-white rounded-2xl overflow-hidden shadow-2xl animate-slide-up">
-            <button onclick="closeImageModal()" class="absolute top-4 right-4 z-10 bg-black/50 text-white rounded-full p-2 hover:bg-black/70 transition-colors">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-            <img id="modal-image" src="" alt="" class="w-full h-auto max-h-[80vh] object-contain">
-            <div class="p-6">
-                <h3 id="modal-title" class="text-2xl font-bold gradient-text mb-2"></h3>
-                <p class="text-gray-600 mb-4">Furniture kayu jati berkualitas tinggi dari Yukkayu Furniture</p>
-                <button onclick="openWhatsApp('Halo! Saya tertarik dengan produk yang saya lihat di galeri. Bisa minta info lebih lanjut?')" class="bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300">
-                    💬 Tanya Produk Ini
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Franchise Section -->
-    <section id="franchise" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold gradient-text mb-4 font-serif">Peluang Franchise</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Bergabunglah dengan jaringan Yukkayu Furniture dan kembangkan bisnis furnitur kayu jati di daerah Anda
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-                <div class="bg-gradient-to-br from-cream to-white rounded-3xl p-8 shadow-xl hover-lift text-center border border-teak/10">
-                    <div class="w-20 h-20 bg-gradient-to-br from-teak to-gold rounded-full flex items-center justify-center mx-auto mb-6 animate-float">
-                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Card 1 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative">
+                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/YK%20-10.jpeg?updatedAt=" 
+                             alt="Furniture Premium" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src=''; this.alt='Produk #1'; this.className='w-full h-48 bg-gradient-to-br from-teak-100 to-teak-200 flex items-center justify-center text-4xl text-teak-600';">
+                        <div class="absolute top-3 right-3 bg-teak-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg">
+                            1
+                        </div>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
                     </div>
-                    <h3 class="text-xl font-bold text-teak mb-4">Brand Terpercaya</h3>
-                    <p class="text-gray-600 leading-relaxed">15+ tahun pengalaman dengan reputasi yang solid di industri furnitur kayu jati</p>
-                </div>
-                
-                <div class="bg-gradient-to-br from-cream to-white rounded-3xl p-8 shadow-xl hover-lift text-center border border-teak/10">
-                    <div class="w-20 h-20 bg-gradient-to-br from-teak to-gold rounded-full flex items-center justify-center mx-auto mb-6 animate-float" style="animation-delay: 0.5s;">
-                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-teak mb-4">Training Lengkap</h3>
-                    <p class="text-gray-600 leading-relaxed">Pelatihan bisnis, produk, dan marketing untuk memastikan kesuksesan franchise Anda</p>
-                </div>
-                
-                <div class="bg-gradient-to-br from-cream to-white rounded-3xl p-8 shadow-xl hover-lift text-center border border-teak/10">
-                    <div class="w-20 h-20 bg-gradient-to-br from-teak to-gold rounded-full flex items-center justify-center mx-auto mb-6 animate-float" style="animation-delay: 1s;">
-                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-teak mb-4">ROI Menarik</h3>
-                    <p class="text-gray-600 leading-relaxed">Potensi keuntungan yang menjanjikan dengan dukungan marketing dan operasional</p>
-                </div>
-            </div>
-            
-            <div class="bg-gradient-to-r from-teak via-teak-dark to-warm-brown rounded-3xl p-8 lg:p-12 text-center relative overflow-hidden">
-                <div class="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
-                <div class="relative z-10">
-                    <h3 class="text-3xl font-bold text-white mb-4">Siap Memulai Bisnis Franchise?</h3>
-                    <p class="text-cream text-lg mb-8 max-w-2xl mx-auto">
-                        Investasi mulai dari Rp 150 juta sudah termasuk stock produk, training, dan dukungan marketing
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button onclick="openWhatsApp('Halo! Saya tertarik dengan peluang franchise Yukkayu Furniture. Bisa minta informasi lengkapnya?')" class="bg-white hover:bg-gray-100 text-teak px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-                            📞 Hubungi Kami Sekarang
+                    <div class="p-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-teak-100 text-teak-800 px-3 py-1 rounded-full text-sm font-semibold">Produk #1</span>
+                        </div>
+                        <button onclick="sendProductWhatsApp(1)" class="w-full bg-gradient-to-r from-teak-600 to-teak-700 hover:from-teak-700 hover:to-teak-800 text-white py-3 rounded-xl font-medium transition-all hover:shadow-lg hover:scale-105 transform">
+                            Tanya Detail Produk
                         </button>
-
                     </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative">
+                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/YK%20-11.jpeg?updatedAt=" 
+                             alt="Furniture Premium" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src=''; this.alt='Produk #2'; this.className='w-full h-48 bg-gradient-to-br from-teak-100 to-teak-200 flex items-center justify-center text-4xl text-teak-600';">
+                        <div class="absolute top-3 right-3 bg-teak-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg">
+                            2
+                        </div>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-teak-100 text-teak-800 px-3 py-1 rounded-full text-sm font-semibold">Produk #2</span>
+                        </div>
+                        <button onclick="sendProductWhatsApp(2)" class="w-full bg-gradient-to-r from-teak-600 to-teak-700 hover:from-teak-700 hover:to-teak-800 text-white py-3 rounded-xl font-medium transition-all hover:shadow-lg hover:scale-105 transform">
+                            Tanya Detail Produk
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative">
+                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/YK%20-12.jpeg?updatedAt=" 
+                             alt="Furniture Premium" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src=''; this.alt='Produk #3'; this.className='w-full h-48 bg-gradient-to-br from-teak-100 to-teak-200 flex items-center justify-center text-4xl text-teak-600';">
+                        <div class="absolute top-3 right-3 bg-teak-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg">
+                            3
+                        </div>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-teak-100 text-teak-800 px-3 py-1 rounded-full text-sm font-semibold">Produk #3</span>
+                        </div>
+                        <button onclick="sendProductWhatsApp(3)" class="w-full bg-gradient-to-r from-teak-600 to-teak-700 hover:from-teak-700 hover:to-teak-800 text-white py-3 rounded-xl font-medium transition-all hover:shadow-lg hover:scale-105 transform">
+                            Tanya Detail Produk
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative">
+                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/YK%20-13.jpeg?updatedAt=" 
+                             alt="Furniture Premium" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src=''; this.alt='Produk #4'; this.className='w-full h-48 bg-gradient-to-br from-teak-100 to-teak-200 flex items-center justify-center text-4xl text-teak-600';">
+                        <div class="absolute top-3 right-3 bg-teak-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg">
+                            4
+                        </div>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-teak-100 text-teak-800 px-3 py-1 rounded-full text-sm font-semibold">Produk #4</span>
+                        </div>
+                        <button onclick="sendProductWhatsApp(4)" class="w-full bg-gradient-to-r from-teak-600 to-teak-700 hover:from-teak-700 hover:to-teak-800 text-white py-3 rounded-xl font-medium transition-all hover:shadow-lg hover:scale-105 transform">
+                            Tanya Detail Produk
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative">
+                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/YK%20-14.jpeg?updatedAt=" 
+                             alt="Furniture Premium" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src=''; this.alt='Produk #5'; this.className='w-full h-48 bg-gradient-to-br from-teak-100 to-teak-200 flex items-center justify-center text-4xl text-teak-600';">
+                        <div class="absolute top-3 right-3 bg-teak-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg">
+                            5
+                        </div>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-teak-100 text-teak-800 px-3 py-1 rounded-full text-sm font-semibold">Produk #5</span>
+                        </div>
+                        <button onclick="sendProductWhatsApp(5)" class="w-full bg-gradient-to-r from-teak-600 to-teak-700 hover:from-teak-700 hover:to-teak-800 text-white py-3 rounded-xl font-medium transition-all hover:shadow-lg hover:scale-105 transform">
+                            Tanya Detail Produk
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative">
+                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/YK%20-15.jpeg?updatedAt=" 
+                             alt="Furniture Premium" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src=''; this.alt='Produk #6'; this.className='w-full h-48 bg-gradient-to-br from-teak-100 to-teak-200 flex items-center justify-center text-4xl text-teak-600';">
+                        <div class="absolute top-3 right-3 bg-teak-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg">
+                            6
+                        </div>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-teak-100 text-teak-800 px-3 py-1 rounded-full text-sm font-semibold">Produk #6</span>
+                        </div>
+                        <button onclick="sendProductWhatsApp(6)" class="w-full bg-gradient-to-r from-teak-600 to-teak-700 hover:from-teak-700 hover:to-teak-800 text-white py-3 rounded-xl font-medium transition-all hover:shadow-lg hover:scale-105 transform">
+                            Tanya Detail Produk
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative">
+                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/YK%20-16.jpeg?updatedAt=" 
+                             alt="Furniture Premium" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src=''; this.alt='Produk #7'; this.className='w-full h-48 bg-gradient-to-br from-teak-100 to-teak-200 flex items-center justify-center text-4xl text-teak-600';">
+                        <div class="absolute top-3 right-3 bg-teak-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg">
+                            7
+                        </div>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-teak-100 text-teak-800 px-3 py-1 rounded-full text-sm font-semibold">Produk #7</span>
+                        </div>
+                        <button onclick="sendProductWhatsApp(7)" class="w-full bg-gradient-to-r from-teak-600 to-teak-700 hover:from-teak-700 hover:to-teak-800 text-white py-3 rounded-xl font-medium transition-all hover:shadow-lg hover:scale-105 transform">
+                            Tanya Detail Produk
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative">
+                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/YK%20-17.jpeg?updatedAt=" 
+                             alt="Furniture Premium" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src=''; this.alt='Produk #8'; this.className='w-full h-48 bg-gradient-to-br from-teak-100 to-teak-200 flex items-center justify-center text-4xl text-teak-600';">
+                        <div class="absolute top-3 right-3 bg-teak-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg">
+                            8
+                        </div>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-teak-100 text-teak-800 px-3 py-1 rounded-full text-sm font-semibold">Produk #8</span>
+                        </div>
+                        <button onclick="sendProductWhatsApp(8)" class="w-full bg-gradient-to-r from-teak-600 to-teak-700 hover:from-teak-700 hover:to-teak-800 text-white py-3 rounded-xl font-medium transition-all hover:shadow-lg hover:scale-105 transform">
+                            Tanya Detail Produk
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative">
+                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/YK%20-18.jpeg?updatedAt=" 
+                             alt="Furniture Premium" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src=''; this.alt='Produk #9'; this.className='w-full h-48 bg-gradient-to-br from-teak-100 to-teak-200 flex items-center justify-center text-4xl text-teak-600';">
+                        <div class="absolute top-3 right-3 bg-teak-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg">
+                            9
+                        </div>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-teak-100 text-teak-800 px-3 py-1 rounded-full text-sm font-semibold">Produk #9</span>
+                        </div>
+                        <button onclick="sendProductWhatsApp(9)" class="w-full bg-gradient-to-r from-teak-600 to-teak-700 hover:from-teak-700 hover:to-teak-800 text-white py-3 rounded-xl font-medium transition-all hover:shadow-lg hover:scale-105 transform">
+                            Tanya Detail Produk
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative">
+                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/YK%20-19.jpeg?updatedAt=" 
+                             alt="Furniture Premium" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src=''; this.alt='Produk #10'; this.className='w-full h-48 bg-gradient-to-br from-teak-100 to-teak-200 flex items-center justify-center text-4xl text-teak-600';">
+                        <div class="absolute top-3 right-3 bg-teak-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg">
+                            10
+                        </div>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-teak-100 text-teak-800 px-3 py-1 rounded-full text-sm font-semibold">Produk #10</span>
+                        </div>
+                        <button onclick="sendProductWhatsApp(10)" class="w-full bg-gradient-to-r from-teak-600 to-teak-700 hover:from-teak-700 hover:to-teak-800 text-white py-3 rounded-xl font-medium transition-all hover:shadow-lg hover:scale-105 transform">
+                            Tanya Detail Produk
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative">
+                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/YK%20-2.jpeg?updatedAt=" 
+                             alt="Furniture Premium" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src=''; this.alt='Produk #11'; this.className='w-full h-48 bg-gradient-to-br from-teak-100 to-teak-200 flex items-center justify-center text-4xl text-teak-600';">
+                        <div class="absolute top-3 right-3 bg-teak-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg">
+                            11
+                        </div>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-teak-100 text-teak-800 px-3 py-1 rounded-full text-sm font-semibold">Produk #11</span>
+                        </div>
+                        <button onclick="sendProductWhatsApp(11)" class="w-full bg-gradient-to-r from-teak-600 to-teak-700 hover:from-teak-700 hover:to-teak-800 text-white py-3 rounded-xl font-medium transition-all hover:shadow-lg hover:scale-105 transform">
+                            Tanya Detail Produk
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 12 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative">
+                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/YK%20-20.jpeg?updatedAt=" 
+                             alt="Furniture Premium" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src=''; this.alt='Produk #12'; this.className='w-full h-48 bg-gradient-to-br from-teak-100 to-teak-200 flex items-center justify-center text-4xl text-teak-600';">
+                        <div class="absolute top-3 right-3 bg-teak-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg">
+                            12
+                        </div>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-teak-100 text-teak-800 px-3 py-1 rounded-full text-sm font-semibold">Produk #12</span>
+                        </div>
+                        <button onclick="sendProductWhatsApp(12)" class="w-full bg-gradient-to-r from-teak-600 to-teak-700 hover:from-teak-700 hover:to-teak-800 text-white py-3 rounded-xl font-medium transition-all hover:shadow-lg hover:scale-105 transform">
+                            Tanya Detail Produk
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 13 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative">
+                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/YK%20-3.jpeg?updatedAt=" 
+                             alt="Furniture Premium" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src=''; this.alt='Produk #13'; this.className='w-full h-48 bg-gradient-to-br from-teak-100 to-teak-200 flex items-center justify-center text-4xl text-teak-600';">
+                        <div class="absolute top-3 right-3 bg-teak-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg">
+                            13
+                        </div>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-teak-100 text-teak-800 px-3 py-1 rounded-full text-sm font-semibold">Produk #13</span>
+                        </div>
+                        <button onclick="sendProductWhatsApp(13)" class="w-full bg-gradient-to-r from-teak-600 to-teak-700 hover:from-teak-700 hover:to-teak-800 text-white py-3 rounded-xl font-medium transition-all hover:shadow-lg hover:scale-105 transform">
+                            Tanya Detail Produk
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 14 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative">
+                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/YK%20-4.jpeg?updatedAt=" 
+                             alt="Furniture Premium" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src=''; this.alt='Produk #14'; this.className='w-full h-48 bg-gradient-to-br from-teak-100 to-teak-200 flex items-center justify-center text-4xl text-teak-600';">
+                        <div class="absolute top-3 right-3 bg-teak-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg">
+                            14
+                        </div>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-teak-100 text-teak-800 px-3 py-1 rounded-full text-sm font-semibold">Produk #14</span>
+                        </div>
+                        <button onclick="sendProductWhatsApp(14)" class="w-full bg-gradient-to-r from-teak-600 to-teak-700 hover:from-teak-700 hover:to-teak-800 text-white py-3 rounded-xl font-medium transition-all hover:shadow-lg hover:scale-105 transform">
+                            Tanya Detail Produk
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 15 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative">
+                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/YK%20-5.jpeg?updatedAt=" 
+                             alt="Furniture Premium" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src=''; this.alt='Produk #15'; this.className='w-full h-48 bg-gradient-to-br from-teak-100 to-teak-200 flex items-center justify-center text-4xl text-teak-600';">
+                        <div class="absolute top-3 right-3 bg-teak-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg">
+                            15
+                        </div>
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-teak-100 text-teak-800 px-3 py-1 rounded-full text-sm font-semibold">Produk #15</span>
+                        </div>
+                        <button onclick="sendProductWhatsApp(15)" class="w-full bg-gradient-to-r from-teak-600 to-teak-700 hover:from-teak-700 hover:to-teak-800 text-white py-3 rounded-xl font-medium transition-all hover:shadow-lg hover:scale-105 transform">
+                            Tanya Detail Produk
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    Pengalaman <span class="gradient-text">Layanan</span> Lengkap
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Dari konsultasi awal hingga pemasangan akhir, kami menyediakan solusi furniture yang komprehensif
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center group">
+                    <div class="bg-white rounded-2xl w-20 h-20 flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
+                        <i class="fas fa-comments text-2xl text-teak-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Konsultasi Gratis</h3>
+                    <p class="text-gray-600 leading-relaxed">Diskusi mendalam tentang kebutuhan furniture dan desain ruang impian Anda tanpa biaya</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="bg-white rounded-2xl w-20 h-20 flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
+                        <i class="fas fa-drafting-compass text-2xl text-teak-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Desain Custom</h3>
+                    <p class="text-gray-600 leading-relaxed">Furniture dibuat sesuai ukuran dan spesifikasi khusus untuk kebutuhan ruang Anda</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="bg-white rounded-2xl w-20 h-20 flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
+                        <i class="fas fa-tree text-2xl text-teak-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Kayu Jati Premium</h3>
+                    <p class="text-gray-600 leading-relaxed">Menggunakan kayu jati belanda berkualitas tinggi yang tahan lama dan ramah lingkungan</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="bg-white rounded-2xl w-20 h-20 flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
+                        <i class="fas fa-shield-alt text-2xl text-teak-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Garansi Kualitas</h3>
+                    <p class="text-gray-600 leading-relaxed">Jaminan kualitas produk dan layanan after-sales untuk kepuasan pelanggan</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-gradient-to-br from-cream to-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div>
-                    <h2 class="text-4xl font-bold text-teak-dark mb-6 font-serif">Tentang Yukkayu Furniture</h2>
-                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-                        Dengan pengalaman lebih dari 15 tahun, Yukkayu Furniture telah menjadi pilihan utama untuk furnitur kayu jati berkualitas tinggi. Kami menggunakan kayu jati belanda pilihan yang diproses dengan teknik tradisional dan teknologi modern.
+                    <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
+                        Mengukir Keunggulan Sejak <span class="gradient-text">2015</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Yukkayu Furniture mengkhususkan diri dalam menciptakan furniture premium dari kayu jati belanda. 
+                        Komitmen kami terhadap kualitas dan keahlian telah menjadikan kami pilihan utama bagi 
+                        pemilik rumah dan pemilik kafe yang menghargai kualitas.
                     </p>
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-teak rounded-full flex items-center justify-center mr-4">
-                                <span class="text-white font-bold">✓</span>
-                            </div>
-                            <span class="text-gray-700">Kayu jati premium grade A</span>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Kami bangga dengan kemitraan kami dengan bisnis kafe kecil, menyediakan mereka 
+                        furniture yang menggabungkan daya tahan, fungsionalitas, dan daya tarik estetika yang tak lekang waktu.
+                    </p>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="text-center">
+                            <div class="text-4xl font-bold gradient-text mb-2">150+</div>
+                            <p class="text-gray-600">Proyek Selesai</p>
                         </div>
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-teak rounded-full flex items-center justify-center mr-4">
-                                <span class="text-white font-bold">✓</span>
-                            </div>
-                            <span class="text-gray-700">Garansi 2 tahun</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-teak rounded-full flex items-center justify-center mr-4">
-                                <span class="text-white font-bold">✓</span>
-                            </div>
-                            <span class="text-gray-700">Desain custom sesuai kebutuhan</span>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold gradient-text mb-2">9+</div>
+                            <p class="text-gray-600">Tahun Pengalaman</p>
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 gap-6">
-                    <div class="bg-white rounded-3xl p-8 shadow-xl text-center hover-lift border border-gray-100">
-                        <div class="text-4xl font-bold text-teak mb-3">500+</div>
-                        <div class="text-gray-600 font-medium">Pelanggan Puas</div>
-                    </div>
-                    <div class="bg-white rounded-3xl p-8 shadow-xl text-center hover-lift border border-gray-100">
-                        <div class="text-4xl font-bold text-teak mb-3">15+</div>
-                        <div class="text-gray-600 font-medium">Tahun Pengalaman</div>
-                    </div>
-                    <div class="bg-white rounded-3xl p-8 shadow-xl text-center hover-lift border border-gray-100">
-                        <div class="text-4xl font-bold text-teak mb-3">3</div>
-                        <div class="text-gray-600 font-medium">Mitra Partner</div>
-                    </div>
-                    <div class="bg-white rounded-3xl p-8 shadow-xl text-center hover-lift border border-gray-100">
-                        <div class="text-4xl font-bold text-teak mb-3">24/7</div>
-                        <div class="text-gray-600 font-medium">Layanan Support</div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-teak-600 to-teak-700 rounded-3xl p-12 text-center text-white">
+                        <i class="fas fa-award text-6xl mb-6 opacity-90"></i>
+                        <h3 class="text-2xl font-semibold mb-4">Jaminan Kualitas Premium</h3>
+                        <p class="text-teak-100 leading-relaxed">
+                            Setiap produk dibuat dengan perhatian detail yang teliti menggunakan kayu jati belanda terbaik, 
+                            memastikan daya tahan dan keindahan yang bertahan untuk generasi.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -940,549 +915,321 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-teak-dark">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-white mb-4 font-serif">Hubungi Kami</h2>
-                <p class="text-xl text-cream max-w-3xl mx-auto">
-                    Siap mewujudkan rumah impian Anda? Konsultasikan kebutuhan furnitur Anda dengan tim ahli kami
+    <section id="contact" class="py-24 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+                    Mari Ciptakan Sesuatu yang <span class="text-teak-400">Indah</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Siap mengubah ruang Anda? Hubungi tim kami untuk konsultasi yang dipersonalisasi
                 </p>
             </div>
             
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div class="space-y-8">
-                    <div class="flex items-start">
-                        <div class="w-12 h-12 bg-teak-light rounded-lg flex items-center justify-center mr-4 mt-1">
-                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-white mb-2">Alamat Showroom</h3>
-                            <p class="text-cream">Jl. Ring Road Jl. Raya Pondok Randu<br>Duri Kosambi, Kecamatan Cengkareng<br>Kota Jakarta Barat, DKI Jakarta 11750</p>
-                        </div>
-                    </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-8">Informasi Kontak</h3>
                     
-                    <div class="flex items-start">
-                        <div class="w-12 h-12 bg-teak-light rounded-lg flex items-center justify-center mr-4 mt-1">
-                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                            </svg>
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-teak-600 rounded-xl p-3 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-2">Lokasi Kami</h4>
+                                <p class="text-gray-300 leading-relaxed">
+                                    Jl. Ring Road Jl. Raya Pondok Randu, Duri Kosambi<br>
+                                    Kecamatan Cengkareng, Jakarta Barat<br>
+                                    DKI Jakarta 11750
+                                </p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-white mb-2">WhatsApp</h3>
-                            <p class="text-cream">+62 812 3456 7890</p>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-teak-600 rounded-xl p-3 flex-shrink-0">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-2">WhatsApp</h4>
+                                <a href="https://wa.me/6282118147705" class="text-teak-400 hover:text-teak-300 transition-colors text-lg">
+                                    082118147705
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="flex items-start">
-                        <div class="w-12 h-12 bg-teak-light rounded-lg flex items-center justify-center mr-4 mt-1">
-                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.5 6L12 10.5 8.5 8 12 5.5 15.5 8zM12 13.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-white mb-2">Jam Operasional</h3>
-                            <p class="text-cream">Senin - Sabtu: 08:00 - 17:00<br>Minggu: 09:00 - 15:00</p>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-teak-600 rounded-xl p-3 flex-shrink-0">
+                                <i class="fas fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-2">Jam Operasional</h4>
+                                <p class="text-gray-300">
+                                    Senin - Sabtu: 08:00 - 17:00<br>
+                                    Minggu: 09:00 - 15:00
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="bg-white rounded-3xl p-8 shadow-xl border border-gray-100">
-                    <h3 class="text-2xl font-semibold text-teak mb-6">Testimoni Pelanggan</h3>
+                <div class="bg-gray-800 rounded-3xl p-8">
+                    <h3 class="text-2xl font-semibold mb-8">Testimoni Pelanggan</h3>
                     <div class="space-y-6">
-                        <div class="bg-cream rounded-xl p-6">
+                        <div class="bg-gray-700 rounded-2xl p-6 border-l-4 border-teak-400">
                             <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-teak rounded-full flex items-center justify-center mr-4">
-                                    <span class="text-white font-bold">BH</span>
+                                <div class="w-12 h-12 bg-gradient-to-br from-teak-500 to-teak-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                                    S
                                 </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-800">Budi Hartono</h4>
-                                    <p class="text-sm text-gray-600">Owner Kafe Nusantara</p>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-white">Sari Dewi</h4>
+                                    <p class="text-sm text-gray-400">Pemilik Kafe</p>
+                                </div>
+                                <div class="ml-auto flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div>
                             </div>
-                            <p class="text-gray-700 italic">"Kitchen set dari Yukkayu sangat berkualitas! Sudah 3 tahun masih seperti baru. Pelayanannya juga sangat memuaskan."</p>
-                            <div class="flex text-yellow-400 mt-3">
-                                ⭐⭐⭐⭐⭐
-                            </div>
+                            <p class="text-gray-300 italic">"Furniture dari Yukkayu sangat berkualitas! Kitchen set kayu jati untuk kafe saya tahan lama dan tampilannya elegan. Pelayanannya juga sangat memuaskan."</p>
                         </div>
                         
-                        <div class="bg-cream rounded-xl p-6">
+                        <div class="bg-gray-700 rounded-2xl p-6 border-l-4 border-teak-400">
                             <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-teak rounded-full flex items-center justify-center mr-4">
-                                    <span class="text-white font-bold">SR</span>
+                                <div class="w-12 h-12 bg-gradient-to-br from-teak-500 to-teak-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                                    B
                                 </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-800">Sari Rahayu</h4>
-                                    <p class="text-sm text-gray-600">Ibu Rumah Tangga</p>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-white">Budi Santoso</h4>
+                                    <p class="text-sm text-gray-400">Rumah Tangga</p>
+                                </div>
+                                <div class="ml-auto flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div>
                             </div>
-                            <p class="text-gray-700 italic">"Meja makan kayu jatinya indah sekali! Tamu-tamu selalu memuji. Investasi terbaik untuk rumah kami."</p>
-                            <div class="flex text-yellow-400 mt-3">
-                                ⭐⭐⭐⭐⭐
-                            </div>
+                            <p class="text-gray-300 italic">"Desain custom furniture untuk rumah saya sangat sesuai dengan keinginan. Kayu jati belanda yang digunakan berkualitas premium dan pengerjaan sangat rapi."</p>
                         </div>
                         
-                        <div class="bg-cream rounded-xl p-6">
+                        <div class="bg-gray-700 rounded-2xl p-6 border-l-4 border-teak-400">
                             <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-teak rounded-full flex items-center justify-center mr-4">
-                                    <span class="text-white font-bold">AP</span>
+                                <div class="w-12 h-12 bg-gradient-to-br from-teak-500 to-teak-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                                    A
                                 </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-800">Ahmad Pratama</h4>
-                                    <p class="text-sm text-gray-600">Franchise Partner</p>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-white">Andi Wijaya</h4>
+                                    <p class="text-sm text-gray-400">Pengusaha</p>
+                                </div>
+                                <div class="ml-auto flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div>
                             </div>
-                            <p class="text-gray-700 italic">"Bergabung dengan franchise Yukkayu adalah keputusan terbaik. Support sistemnya luar biasa!"</p>
-                            <div class="flex text-yellow-400 mt-3">
-                                ⭐⭐⭐⭐⭐
-                            </div>
+                            <p class="text-gray-300 italic">"Pelayanan dari awal konsultasi hingga pemasangan sangat profesional. Hasil akhir furniture melebihi ekspektasi saya. Highly recommended!"</p>
                         </div>
                     </div>
                     
-                    <button onclick="openWhatsApp('Halo! Saya ingin berbagi testimoni atau bertanya tentang produk Yukkayu Furniture.')" class="w-full mt-6 bg-teak hover:bg-teak-dark text-white py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
-                        💬 Bagikan Testimoni Anda
-                    </button>
+                    <div class="mt-8 text-center">
+                        <a href="https://wa.me/6282118147705" class="inline-flex items-center space-x-2 bg-gradient-to-r from-teak-600 to-teak-700 hover:from-teak-700 hover:to-teak-800 text-white px-8 py-4 rounded-xl font-semibold transition-all hover:shadow-lg">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Konsultasi Gratis</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-teak-dark border-t border-teak-light py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer class="bg-black text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="col-span-1 md:col-span-2">
-                    <div class="flex items-center mb-4">
-                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/Yukkayu.jpg?updatedAt=" alt="Yukkayu Furniture" class="h-10 w-10 object-cover rounded-full mr-3 shadow-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <div class="text-2xl font-bold text-white font-serif">
-                            <span class="text-cream">YUKKAYU</span>
-                            <span class="text-teak-light ml-1">FURNITURE</span>
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="https://ik.imagekit.io/logojkdiy/YUKKAYU%20-%20FURNITURE/Yukkayu.jpg?updatedAt=" 
+                             alt="Yukkayu Furniture" 
+                             class="h-10 w-10 rounded-full object-cover"
+                             onerror="this.style.display='none';">
+                        <div>
+                            <h1 class="text-2xl font-bold text-white">Yukkayu</h1>
+                            <p class="text-xs text-gray-400 -mt-1">FURNITURE</p>
                         </div>
                     </div>
-                    <p class="text-cream mb-4 max-w-md">
-                        Menghadirkan keindahan dan kualitas kayu jati terbaik untuk rumah impian Anda sejak 2008.
+                    <p class="text-gray-400 leading-relaxed max-w-md">
+                        Furniture kayu jati belanda premium yang dibuat dengan keunggulan. 
+                        Menciptakan karya tak lekang waktu untuk rumah dan bisnis sejak 2015.
                     </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="group w-12 h-12 bg-gradient-to-br from-teak-light to-teak rounded-xl flex items-center justify-center hover:from-teak hover:to-teak-dark transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-110">
-                            <svg class="w-6 h-6 text-white group-hover:text-cream transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                            </svg>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6">Keunggulan Kami</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-teak-400 text-sm"></i>
+                            <span class="hover:text-teak-400 transition-colors">Kayu Jati Premium</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-teak-400 text-sm"></i>
+                            <span class="hover:text-teak-400 transition-colors">Desain Custom</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-teak-400 text-sm"></i>
+                            <span class="hover:text-teak-400 transition-colors">Garansi Kualitas</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-teak-400 text-sm"></i>
+                            <span class="hover:text-teak-400 transition-colors">Konsultasi Gratis</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6">Hubungi Kami</h4>
+                    <div class="space-y-4">
+                        <a href="https://wa.me/6282118147705" class="flex items-center space-x-3 hover:text-teak-400 transition-colors group">
+                            <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center group-hover:bg-green-500 transition-colors">
+                                <i class="fab fa-whatsapp text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">WhatsApp</p>
+                                <p class="text-sm text-gray-400">082118147705</p>
+                            </div>
                         </a>
-                        <a href="https://instagram.com/yukkayufurniture" target="_blank" class="group w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-110">
-                            <svg class="w-6 h-6 text-white group-hover:text-pink-100 transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="group w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl flex items-center justify-center hover:from-blue-700 hover:to-blue-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-110">
-                            <svg class="w-6 h-6 text-white group-hover:text-blue-100 transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="#" onclick="openWhatsApp('Halo! Saya ingin mengikuti update terbaru dari Yukkayu Furniture.')" class="group w-12 h-12 bg-gradient-to-br from-green-500 to-green-700 rounded-xl flex items-center justify-center hover:from-green-600 hover:to-green-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-110">
-                            <svg class="w-6 h-6 text-white group-hover:text-green-100 transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.516"/>
-                            </svg>
-                        </a>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-teak-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">Lokasi</p>
+                                <p class="text-sm text-gray-400">Jakarta Barat</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div>
-                    <h4 class="text-white font-semibold mb-4">Produk</h4>
-                    <ul class="space-y-2 text-cream">
-                        <li><a href="#" class="hover:text-white transition-colors">Meja Makan</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Kitchen Set</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Furniture Kafe</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Lemari & Storage</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-white font-semibold mb-4">Layanan</h4>
-                    <ul class="space-y-2 text-cream">
-                        <li><a href="#" class="hover:text-white transition-colors">Konsultasi Gratis</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Desain Custom</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Peluang Franchise</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Pengiriman & Instalasi</a></li>
-                    </ul>
                 </div>
             </div>
             
-            <div class="border-t border-teak-light mt-8 pt-8 text-center">
-                <p class="text-cream">&copy; Yukkayu Furniture. Semua hak dilindungi undang-undang.</p>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; Yukkayu Furniture. Semua hak cipta dilindungi.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <div class="fixed bottom-6 right-6 z-40">
-        <button onclick="openWhatsApp('Halo! Saya tertarik dengan produk Yukkayu Furniture.')" class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 animate-pulse">
-            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.516"/>
-            </svg>
-        </button>
-    </div>
-
     <script>
-        // Global variables
-        let isMenuOpen = false;
-        let isScrolling = false;
-        let scrollTimeout;
-        let currentTestimonial = 0;
-
-        // WhatsApp function
-        function openWhatsApp(message) {
-            const phoneNumber = '6281234567890'; // Ganti dengan nomor yang benar
-            const encodedMessage = encodeURIComponent(message);
-            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-            window.open(whatsappURL, '_blank');
-            showNotification('Membuka WhatsApp...');
-        }
-
-        // Notification system
-        function showNotification(message, type = 'success') {
-            const notification = document.getElementById('notification');
-            const notificationText = document.getElementById('notification-text');
-            
-            if (notification && notificationText) {
-                notificationText.textContent = message;
-                notification.classList.add('show');
-                
-                // Auto hide after 3 seconds
-                setTimeout(() => {
-                    notification.classList.remove('show');
-                }, 3000);
-            }
-        }
-
-        // Welcome popup functions
+        // Welcome popup functionality
         function closeWelcomePopup() {
             const popup = document.getElementById('welcome-popup');
-            if (popup) {
+            popup.style.opacity = '0';
+            popup.style.transform = 'scale(0.9)';
+            setTimeout(() => {
                 popup.style.display = 'none';
-                showNotification('Selamat datang di Yukkayu Furniture!');
-            }
+            }, 300);
         }
 
+        // Auto close popup after 8 seconds
+        setTimeout(() => {
+            closeWelcomePopup();
+        }, 8000);
 
-
-        // Gallery functions
-
-        function openImageModal(imageSrc, title) {
-            const modal = document.getElementById('image-modal');
-            const modalImage = document.getElementById('modal-image');
-            const modalTitle = document.getElementById('modal-title');
-
-            if (modal && modalImage && modalTitle) {
-                modalImage.src = imageSrc;
-                modalTitle.textContent = title;
-                modal.style.display = 'flex';
-                document.body.style.overflow = 'hidden';
-            }
-        }
-
-        function closeImageModal() {
-            const modal = document.getElementById('image-modal');
-            if (modal) {
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
-        }
-
-        function loadMoreGallery() {
-            showNotification('Fitur load more akan segera tersedia!');
-        }
-
-        // Lazy loading for images
-        function setupLazyLoading() {
-            const images = document.querySelectorAll('.lazy-image');
-            const imageObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const img = entry.target;
-                        img.classList.add('loaded');
-                        observer.unobserve(img);
-                    }
-                });
-            });
-
-            images.forEach(img => imageObserver.observe(img));
-        }
-
-        // Mobile menu toggle with improved stability
-        function setupMobileMenu() {
-            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
             const mobileMenu = document.getElementById('mobile-menu');
-            
-            if (mobileMenuBtn && mobileMenu) {
-                mobileMenuBtn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    
-                    isMenuOpen = !isMenuOpen;
-                    
-                    if (isMenuOpen) {
-                        mobileMenu.style.display = 'block';
-                        mobileMenu.classList.remove('hidden');
-                        mobileMenu.classList.add('animate-slide-up');
-                    } else {
-                        mobileMenu.style.display = 'none';
-                        mobileMenu.classList.add('hidden');
-                    }
-                });
-                
-                // Close menu when clicking outside
-                document.addEventListener('click', (e) => {
-                    if (isMenuOpen && !mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-                        isMenuOpen = false;
-                        mobileMenu.style.display = 'none';
-                        mobileMenu.classList.add('hidden');
-                    }
-                });
-            }
-        }
+            mobileMenu.classList.toggle('hidden');
+        });
 
-        // Smooth scrolling for navigation links
-        function setupSmoothScrolling() {
-            function handleNavClick(e) {
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                e.stopPropagation();
-                
-                const targetId = this.getAttribute('href');
-                const target = document.querySelector(targetId);
-                
+                const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    // Close mobile menu if open
-                    if (isMenuOpen) {
-                        const mobileMenu = document.getElementById('mobile-menu');
-                        if (mobileMenu) {
-                            isMenuOpen = false;
-                            mobileMenu.style.display = 'none';
-                            mobileMenu.classList.add('hidden');
-                        }
-                    }
-                    
-                    // Disable scroll spy temporarily
-                    isScrolling = true;
-                    
-                    // Calculate offset based on navigation height
-                    const navHeight = document.getElementById('main-nav').offsetHeight + 40;
-                    const offsetTop = target.offsetTop - navHeight;
-                    
-                    window.scrollTo({
-                        top: offsetTop,
-                        behavior: 'smooth'
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
                     });
-                    
-                    // Re-enable scroll spy
-                    setTimeout(() => {
-                        isScrolling = false;
-                        updateActiveNavigation(targetId.substring(1));
-                    }, 1000);
-                }
-            }
-
-            // Apply to all navigation links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', handleNavClick);
-            });
-        }
-
-        // Update active navigation state
-        function updateActiveNavigation(activeSection) {
-            // Update desktop navigation
-            document.querySelectorAll('.nav-link').forEach(link => {
-                const href = link.getAttribute('href');
-                if (href && href.startsWith('#')) {
-                    if (href === `#${activeSection}`) {
-                        link.classList.add('text-teak');
-                        link.classList.remove('text-teak-dark');
-                    } else {
-                        link.classList.remove('text-teak');
-                        link.classList.add('text-teak-dark');
-                    }
+                    document.getElementById('mobile-menu').classList.add('hidden');
                 }
             });
+        });
+
+
+
+        // WhatsApp product inquiry
+        function sendProductWhatsApp(productNumber) {
+            const message = `Halo Yukkayu Furniture!
+
+Saya tertarik dengan produk furniture nomor ${productNumber} yang ada di katalog website Anda.
+
+Bisa tolong berikan informasi lebih detail mengenai:
+- Spesifikasi produk
+- Harga
+- Waktu pengerjaan
+- Proses pemesanan
+
+Terima kasih!`;
             
-            // Update mobile navigation
-            document.querySelectorAll('.mobile-nav-link').forEach(link => {
-                const href = link.getAttribute('href');
-                if (href && href.startsWith('#')) {
-                    if (href === `#${activeSection}`) {
-                        link.classList.add('text-teak', 'bg-teak/10');
-                        link.classList.remove('text-gray-700');
-                    } else {
-                        link.classList.remove('text-teak', 'bg-teak/10');
-                        link.classList.add('text-gray-700');
-                    }
-                }
-            });
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/6282118147705?text=${encodedMessage}`;
+            window.open(whatsappUrl, '_blank');
         }
 
-        // Enhanced scroll spy
-        function setupScrollSpy() {
-            window.addEventListener('scroll', () => {
-                if (isScrolling) return;
-                
-                // Clear previous timeout
-                if (scrollTimeout) {
-                    clearTimeout(scrollTimeout);
-                }
-                
-                scrollTimeout = setTimeout(() => {
-                    // Update navigation background
-                    const nav = document.getElementById('main-nav');
-                    if (nav) {
-                        if (window.scrollY > 50) {
-                            nav.classList.add('shadow-2xl');
-                            nav.classList.remove('shadow-xl');
-                        } else {
-                            nav.classList.remove('shadow-2xl');
-                            nav.classList.add('shadow-xl');
-                        }
-                    }
-                    
-                    // Update active section
-                    const sections = document.querySelectorAll('section[id]');
-                    let currentSection = 'home';
-                    
-                    sections.forEach(section => {
-                        const sectionTop = section.offsetTop - 150;
-                        const sectionHeight = section.offsetHeight;
-                        const scrollPosition = window.scrollY;
-                        
-                        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                            currentSection = section.getAttribute('id');
-                        }
-                    });
-                    
-                    updateActiveNavigation(currentSection);
-                }, 50);
+        // Real-time clock
+        function updateClock() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('id-ID', {
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false
             });
-        }
-
-        // Testimonial carousel
-        function setupTestimonialCarousel() {
-            const testimonials = document.querySelectorAll('.bg-cream');
-            
-            if (testimonials.length > 0) {
-                setInterval(() => {
-                    testimonials.forEach((testimonial, index) => {
-                        if (index === currentTestimonial) {
-                            testimonial.style.transform = 'scale(1.02)';
-                            testimonial.style.boxShadow = '0 10px 30px rgba(107, 68, 35, 0.2)';
-                        } else {
-                            testimonial.style.transform = 'scale(1)';
-                            testimonial.style.boxShadow = 'none';
-                        }
-                    });
-                    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-                }, 3000);
+            const clockElement = document.getElementById('current-time');
+            if (clockElement) {
+                clockElement.textContent = timeString;
             }
         }
+
+        // Update clock immediately and then every second
+        updateClock();
+        setInterval(updateClock, 1000);
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
 
         // Intersection Observer for animations
-        function setupAnimationObserver() {
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
 
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('fade-in');
-                    }
-                });
-            }, observerOptions);
-
-            // Observe all sections and cards
-            document.querySelectorAll('section, .hover-lift, .product-card').forEach(element => {
-                observer.observe(element);
-            });
-        }
-
-        // Scroll to top button
-        function setupScrollToTop() {
-            const scrollToTopBtn = document.createElement('button');
-            scrollToTopBtn.innerHTML = `
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
-                </svg>
-            `;
-            scrollToTopBtn.className = 'fixed bottom-6 left-6 bg-gradient-to-r from-teak to-teak-dark text-white w-14 h-14 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-40 opacity-0 pointer-events-none flex items-center justify-center';
-            scrollToTopBtn.onclick = () => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-                showNotification('Kembali ke atas');
-            };
-            document.body.appendChild(scrollToTopBtn);
-
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 300) {
-                    scrollToTopBtn.style.opacity = '1';
-                    scrollToTopBtn.style.pointerEvents = 'auto';
-                } else {
-                    scrollToTopBtn.style.opacity = '0';
-                    scrollToTopBtn.style.pointerEvents = 'none';
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
                 }
             });
-        }
+        }, observerOptions);
 
-
-
-        // Keyboard shortcuts
-        function setupKeyboardShortcuts() {
-            document.addEventListener('keydown', (e) => {
-                // ESC to close modals
-                if (e.key === 'Escape') {
-                    closeWelcomePopup();
-                    closeImageModal();
-                }
-            });
-        }
-
-        // Initialize everything when DOM is loaded
-        document.addEventListener('DOMContentLoaded', () => {
-            setupMobileMenu();
-            setupSmoothScrolling();
-            setupScrollSpy();
-            setupTestimonialCarousel();
-            setupAnimationObserver();
-            setupScrollToTop();
-
-            setupKeyboardShortcuts();
-            setupLazyLoading();
-            
-            // Show welcome popup after a short delay
-            setTimeout(() => {
-                const popup = document.getElementById('welcome-popup');
-                if (popup) {
-                    popup.style.display = 'flex';
-                    
-                    // Auto-close after 5 seconds
-                    setTimeout(() => {
-                        closeWelcomePopup();
-                    }, 5000);
-                }
-            }, 1000);
-        });
-
-        // Handle page visibility change
-        document.addEventListener('visibilitychange', () => {
-            if (document.visibilityState === 'visible') {
-                showNotification('Selamat datang kembali!');
-            }
-        });
-
-        // Performance optimization: Debounce resize events
-        let resizeTimeout;
-        window.addEventListener('resize', () => {
-            clearTimeout(resizeTimeout);
-            resizeTimeout = setTimeout(() => {
-                // Recalculate positions if needed
-                updateActiveNavigation(document.querySelector('section[id]')?.id || 'home');
-            }, 250);
+        // Apply animation to sections
+        document.querySelectorAll('section > div').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(el);
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97830ffc943d9fc8',t:'MTc1NjcxMTgyOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9796d811924acec2',t:'MTc1NjkxOTI1My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
